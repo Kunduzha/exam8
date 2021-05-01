@@ -6,3 +6,5 @@ Good_change,
 Good_delete
 
 )
+
+from webapp.views.reviews import (AddReview, AllReviews, ReviewUpdate, DeleteReview)

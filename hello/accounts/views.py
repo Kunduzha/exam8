@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.views import View
+
 from django.views.generic import DetailView, UpdateView
 
 from accounts.forms import MyUserCreationForm, UserChangeForm, ProfileChangeForm, PasswordChangeForm
@@ -20,7 +20,7 @@ def register_view(request, *args, **kwargs):
             user = form.save()
 
             login(request, user)
-            return redirect('project:main_page')
+            return redirect('main_page')
     else:
         form = MyUserCreationForm()
     return render(request, 'registration/user_create.html', context={'form': form})
@@ -94,6 +94,6 @@ class UserPasswordChangeView(PasswordChangeView):
         return reverse('account:detail', kwargs={'pk': self.request.user.pk})
 
 
-from django.shortcuts import render
+
 
 # Create your views here.

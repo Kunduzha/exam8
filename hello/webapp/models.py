@@ -30,11 +30,11 @@ class Goods(models.Model):
 
 
 class Review(models.Model):
-    author = models.ForeignKey(get_user_model(), null=True, blank=True, related_name='review', verbose_name='автор', on_delete=models.CASCADE)
+    user = models.ForeignKey(get_user_model(), null=True, blank=True, related_name='review', verbose_name='автор', on_delete=models.CASCADE)
     good = models.ForeignKey('webapp.Goods', on_delete=models.CASCADE, related_name='review', verbose_name='товар',
                                 null=False, blank=False)
     text_review = models.TextField(null=False, blank=False, max_length=2000, verbose_name='Отзыв')
-    rating = models.IntegerField(null=False, blank=False, verbose_name='Оценка', validators=[MinValueValidator(1), MaxValueValidator(5)])
+    rating = models.IntegerField(null=False, blank=False, verbose_name='Оценка', validators=[MinValueValidator(1), MaxValueValidator(5)], default=0)
     moderation =models.BooleanField(null=False, blank=False, verbose_name='Отмодерирован', default=False)
 
 

@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 
-from webapp.views import IndexView_good, Good_more, Good_add, Good_change, Good_delete
+from webapp.views import IndexView_good, Good_more, Good_add, Good_change, Good_delete, AddReview, DeleteReview, ReviewUpdate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +28,8 @@ urlpatterns = [
     path('add/', Good_add.as_view(), name='add_good'),
     path('edit/<int:pk>/', Good_change.as_view(), name='change_good'),
     path('delete/<int:pk>/', Good_delete.as_view(), name='del_good'),
+    path('<int:pk>/add_review/', AddReview.as_view(), name='adding_review'),
+    path('delete/<int:pk>/', DeleteReview.as_view(), name='delete_review'),
+    path('update/<int:pk>/', ReviewUpdate.as_view(), name='update_review'),
     path('accounts/', include('accounts.urls')),
 ]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

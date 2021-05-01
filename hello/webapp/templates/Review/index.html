@@ -1,0 +1,47 @@
+
+
+{% block content %}
+    <div >
+
+
+        {% if not reviews %}
+            <h1>Нет Oценок</h1>
+        {% else %}
+
+
+
+
+             <table class="table">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">Автор</th>
+      <th scope="col">Текст</th>
+      <th scope="col">Рейтинг</th>
+    </tr>
+  </thead>
+  <tbody>
+            {% for review in reviews %}
+                <tr>
+            <td class="table-success">
+                {{review.author}}
+            </td>
+            <td class="table-active">
+                {{ review.text_review }}
+            </td>
+                <td class="table-active">
+                {{ review.rating }}
+            </td>
+             <td class="table-active">
+                {{ review.moderation }}
+             </td>
+
+                </tr>
+            {% endfor %}
+    </tbody>
+</table>
+
+
+        {% endif %}
+    </div>
+{% endblock content %}
