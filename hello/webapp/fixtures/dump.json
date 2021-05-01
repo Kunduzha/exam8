@@ -112,7 +112,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$260000$aLwkJ0P9w7l5LzFBn7ZswB$DOBbaZQSKdO7OqTighZ+0g4cfxIcJWcyFxidcAYGRYQ=",
-    "last_login": "2021-05-01T09:33:05.442Z",
+    "last_login": "2021-05-01T12:52:04.197Z",
     "is_superuser": true,
     "username": "moderator",
     "first_name": "",
