@@ -52,4 +52,4 @@ class Review(models.Model):
         return rate_sum/len(rate)
 
     def __str__(self):
-        return f'{self.id}. {self.author}: {self.text_review:20}'
+        return f'{self.id}. {self.user}: {self.text_review:20}'

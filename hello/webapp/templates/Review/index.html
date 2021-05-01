@@ -1,5 +1,3 @@
-
-
 {% block content %}
     <div >
 
@@ -11,20 +9,21 @@
 
 
 
-             <table class="table">
+            <table class="table">
   <caption>List of users</caption>
   <thead>
     <tr>
       <th scope="col">Автор</th>
       <th scope="col">Текст</th>
       <th scope="col">Рейтинг</th>
+        <th scope="col">отМодерирован</th>
     </tr>
   </thead>
   <tbody>
-            {% for review in reviews %}
+            {% for review in good.reviews.all %}
                 <tr>
             <td class="table-success">
-                {{review.author}}
+                {{review.user}}
             </td>
             <td class="table-active">
                 {{ review.text_review }}

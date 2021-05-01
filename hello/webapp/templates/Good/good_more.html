@@ -2,9 +2,15 @@
 {% extends "base.html" %}
 {% load static %}
 {% block menu %}
+    {% if perms.webapp.add_goods %}
     <li><a href="{% url "add_good" %}">Добавить товар</a></li>
+    {% endif %}
+{% if perms.webapp.change_goods %}
     <li><a href="{% url "change_good" goods.pk%}">Изменить товар</a></li>
+    {% endif %}
+{% if perms.webapp.delete_goods %}
     <li><a href="{% url "del_good" goods.pk %}">Удалить товар</a></li>
+    {% endif %}
 {% endblock menu %}
 {% block page_header %}Товар {{ good.id }}{% endblock page_header %}
 {% block content %}
@@ -21,9 +27,9 @@
     фото: {{ goods.image }}
     </div>
 {#    <td><a href="{% url "add_to_cart" good.id %}">Добавить в корзинку</a></td>#}
-{#{% if perms.webapp.add_review and request.user in goods..all %}#}
+{% if perms.webapp.add_review and request.user in goods..all %}
     <div class="col px-md-5"><div class="p-3 border bg-light"><a href="{% url "adding_review" goods.pk %}"> добавить отзыв</a></div></div>
-{#    {% endif %}#}
+    {% endif %}
  {% include 'Review/index.html' %}
 {% endblock content %}
 

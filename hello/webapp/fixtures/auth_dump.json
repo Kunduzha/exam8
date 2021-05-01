@@ -1,0 +1,171 @@
+[
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "moderator",
+    "permissions": [
+      [
+        "add_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "change_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "delete_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "view_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "add_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "change_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "delete_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "view_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "add_user",
+        "auth",
+        "user"
+      ],
+      [
+        "change_user",
+        "auth",
+        "user"
+      ],
+      [
+        "delete_user",
+        "auth",
+        "user"
+      ],
+      [
+        "view_user",
+        "auth",
+        "user"
+      ],
+      [
+        "add_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "change_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "delete_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "view_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "add_category",
+        "webapp",
+        "category"
+      ],
+      [
+        "change_category",
+        "webapp",
+        "category"
+      ],
+      [
+        "delete_category",
+        "webapp",
+        "category"
+      ],
+      [
+        "view_category",
+        "webapp",
+        "category"
+      ],
+      [
+        "add_goods",
+        "webapp",
+        "goods"
+      ],
+      [
+        "change_goods",
+        "webapp",
+        "goods"
+      ],
+      [
+        "delete_goods",
+        "webapp",
+        "goods"
+      ],
+      [
+        "view_goods",
+        "webapp",
+        "goods"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$aLwkJ0P9w7l5LzFBn7ZswB$DOBbaZQSKdO7OqTighZ+0g4cfxIcJWcyFxidcAYGRYQ=",
+    "last_login": "2021-05-01T09:33:05.442Z",
+    "is_superuser": true,
+    "username": "moderator",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-30T13:51:39Z",
+    "groups": [
+      [
+        "moderator"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$cBGBJPZqmmjeraIAsU3kRh$IPCqUJ0Ga9Y6z2j1rELuvRfQxmO0PAE6PFNxdCP2O4g=",
+    "last_login": "2021-05-01T12:31:42.444Z",
+    "is_superuser": false,
+    "username": "kunduz",
+    "first_name": "manager",
+    "last_name": "developer",
+    "email": "kuzanai@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-01T12:31:42.265Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

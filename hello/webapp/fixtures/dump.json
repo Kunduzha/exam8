@@ -70,8 +70,41 @@
   "fields": {
     "name": "Чон отук",
     "category": 3,
-    "description": "овлжфаоывдаофдывжоа",
+    "description": "овлжфаоывдаофдывжоарррррррр",
     "image": ""
+  }
+},
+{
+  "model": "webapp.review",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "good": 1,
+    "text_review": "jfda;jdfjda;dsklfjalk;jd",
+    "rating": 5,
+    "moderation": true
+  }
+},
+{
+  "model": "webapp.review",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "good": 3,
+    "text_review": "jdfkljadlskfjlkas;djfklsdajfl",
+    "rating": 4,
+    "moderation": true
+  }
+},
+{
+  "model": "webapp.review",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "good": 1,
+    "text_review": "kkkkkkkkkkkkkk",
+    "rating": 2,
+    "moderation": true
   }
 },
 {
@@ -79,7 +112,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$260000$aLwkJ0P9w7l5LzFBn7ZswB$DOBbaZQSKdO7OqTighZ+0g4cfxIcJWcyFxidcAYGRYQ=",
-    "last_login": "2021-05-01T06:06:11.905Z",
+    "last_login": "2021-05-01T09:33:05.442Z",
     "is_superuser": true,
     "username": "moderator",
     "first_name": "",
@@ -91,6 +124,24 @@
     "groups": [
       1
     ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$cBGBJPZqmmjeraIAsU3kRh$IPCqUJ0Ga9Y6z2j1rELuvRfQxmO0PAE6PFNxdCP2O4g=",
+    "last_login": "2021-05-01T12:31:42.444Z",
+    "is_superuser": false,
+    "username": "kunduz",
+    "first_name": "manager",
+    "last_name": "developer",
+    "email": "kuzanai@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-01T12:31:42.265Z",
+    "groups": [],
     "user_permissions": []
   }
 }

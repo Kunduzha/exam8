@@ -31,7 +31,7 @@ class ReviewUpdate(PermissionRequiredMixin, UpdateView):
     permission_required = 'webapp.change_review'
 
     def has_permission(self):
-        return super().has_permission() and self.request.user in self.get_object().goods.review.user.all()
+        return super().has_permission() and self.request.user in self.get_object().good.review.user.all()
 
     def get_success_url(self):
         return reverse('see_good', kwargs={'pk': self.object.good.pk})
