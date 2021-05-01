@@ -1,0 +1,97 @@
+[
+{
+  "model": "webapp.category",
+  "pk": 1,
+  "fields": {
+    "name": "Косметика"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 2,
+  "fields": {
+    "name": "Одежда"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 3,
+  "fields": {
+    "name": "Обувь"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 4,
+  "fields": {
+    "name": "Женское"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 5,
+  "fields": {
+    "name": "Детское"
+  }
+},
+{
+  "model": "webapp.goods",
+  "pk": 1,
+  "fields": {
+    "name": "Помада",
+    "category": 4,
+    "description": "Поооомааааадааааа, Поооомааааадааааа",
+    "image": "images/e2f1fb8c13410254.jpg"
+  }
+},
+{
+  "model": "webapp.goods",
+  "pk": 2,
+  "fields": {
+    "name": "Толокар",
+    "category": 5,
+    "description": "С первых шагов вашей малышки",
+    "image": "images/1556909100194766269.jpg"
+  }
+},
+{
+  "model": "webapp.goods",
+  "pk": 3,
+  "fields": {
+    "name": "Платье",
+    "category": 2,
+    "description": "воалджфыоадыфоа",
+    "image": ""
+  }
+},
+{
+  "model": "webapp.goods",
+  "pk": 4,
+  "fields": {
+    "name": "Чон отук",
+    "category": 3,
+    "description": "овлжфаоывдаофдывжоа",
+    "image": ""
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$aLwkJ0P9w7l5LzFBn7ZswB$DOBbaZQSKdO7OqTighZ+0g4cfxIcJWcyFxidcAYGRYQ=",
+    "last_login": "2021-05-01T06:06:11.905Z",
+    "is_superuser": true,
+    "username": "moderator",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-30T13:51:39Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+}
+]
